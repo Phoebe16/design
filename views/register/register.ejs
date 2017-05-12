@@ -1,0 +1,26 @@
+
+<% include ../nav.ejs %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/register.css">
+
+    <div class = "register">
+        <div class="alert alert-danger" role="alert" id="error">
+
+        </div>
+        <div class="container">
+            <form class="register-panel">
+                <div class="title">欢迎注册</div>
+                <div class="control-group">
+                    <input type="text" class="form-control input" id="account" placeholder="账号">
+                </div>
+                <div class="control-group">
+                    <input type="password" class="form-control input" id="password" placeholder="密码">
+                </div>
+                <div class="control-group">
+                    <input type="password" class="form-control input" id="pwdConfirm" placeholder="确认密码">
+                </div>
+                <button type="button" class="btn btn-default input submit" id="register">立即注册</button>
+            </form>
+        </div>
+    </div>
+<%- include ../footer.ejs %>
+<script type="text/javascript" src="/javascripts/register/register.js"></script>
